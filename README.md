@@ -98,7 +98,7 @@ npm run dev
 ```
 
 - Health: `http://localhost:5000/api/health`
-- App: `http://localhost:5173`
+- App: `http://localhost:5173`.
 
 ## Environment Variables
 
