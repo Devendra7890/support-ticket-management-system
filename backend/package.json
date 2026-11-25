@@ -1,0 +1,45 @@
+{
+  "name": "support-ticket-management-backend",
+  "version": "1.0.0",
+  "description": "Backend API for the Support Ticket Management System",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "validate:models": "node scripts/validateModels.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "test:auth": "node scripts/testAuth.js",
+    "test:tickets": "node scripts/testTickets.js",
+    "test:admin-tickets": "node scripts/testAdminTickets.js",
+    "test:comments": "node scripts/testComments.js",
+    "test:events": "node scripts/testEvents.js",
+    "test:phase4": "npm run test:auth && npm run test:tickets",
+    "test:phase5": "npm run test:auth && npm run test:tickets && npm run test:admin-tickets",
+    "test:phase6": "npm run test:auth && npm run test:tickets && npm run test:admin-tickets && npm run test:comments",
+    "test:phase7": "npm run test:auth && npm run test:tickets && npm run test:admin-tickets && npm run test:comments && npm run test:events",
+    "test:phase10": "node scripts/testPhase10AdminUiApis.js",
+    "test:phase11": "node scripts/testPhase11Integration.js",
+    "test:regression": "npm run test:auth && npm run test:tickets && npm run test:admin-tickets && npm run test:comments && npm run test:events && npm run test:phase10 && npm run test:phase11"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "support-tickets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.13.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "eslint": "^10.15.0",
+    "nodemon": "^3.1.14"
+  }
+}

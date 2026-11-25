@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+:root {
+  --stm-bg: #f3f6f8;
+  --stm-ink: #0f172a;
+  --stm-muted: #64748b;
+  --stm-border: #d9e2ec;
+  --stm-accent: #0e7490;
+  --stm-accent-strong: #155e75;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--stm-ink);
+  background-color: var(--stm-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--stm-bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Do not set `color` here — it overrides Tailwind text utilities on NavLinks
+   (e.g. active sidebar: dark bg + inherited ink color = invisible label). */
+a {
+  text-decoration: none;
+}
